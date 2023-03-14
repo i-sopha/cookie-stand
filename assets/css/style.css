@@ -6,11 +6,12 @@
 h1 {
     font-weight: 900;
     font-size: 100px;
-    color: bisque;
+    color: bisque;   padding-bottom: 50px;
+
 }
 
-h2 {
-
+h2 h3 {
+    font-style: "times new roman" sans-serif;
 }
 
 footer {
@@ -24,6 +25,7 @@ footer {
     border: solid;
     border-radius: 50%;
     padding: 20px;
+    margin-top: 50px;
 }
 
 nav ul li {
