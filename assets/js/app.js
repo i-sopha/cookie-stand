@@ -31,9 +31,9 @@ let seattle = {
         }
     },
 
-    render: function () {
+    renderLiElements: function () {
         this.getCookiesPerHour()
-        let seattleList = document.getElementById('seattle');
+        let seattleList = document.getElementById('seattleList');
         for (let i = 0; i < hours.length; i++) {
             let liElement = document.createElement('li');
             liElement.textContent = `${hours[i]}: ${this.cookiesPerHour[i]} cookies.`;
@@ -52,10 +52,10 @@ let seattle = {
 // // append to parent
 
 // // Seattle
-seattle.render();
+seattle.renderLiElements();
 console.log(seattle.cookiesPerHour);
 
-// // LI Elements
+// H2 element called outside
 let seattleElement = document.getElementById('seaH2');
 let h2Element1 = document.createElement('h2');
 h2Element1.textContent = seattle.location;
