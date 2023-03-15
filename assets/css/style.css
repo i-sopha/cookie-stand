@@ -1,41 +1,82 @@
 * {
-    background-color: brown;
+    background-color: lightcoral;
+    margin: auto;
     text-align: center;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 100px;
-    color: bisque;   padding-bottom: 50px;
+.salmon {
+    font-size: 75px;
+    align-items: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+ font-size: 30px;
+font-weight: 700;
+font-family: "Sofia", sans-serif;
+color: bisque;
+}
+
+img {
+    margin: 30px;
+}
+
+nav ul li{
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
-h2 h3 {
-    font-style: "times new roman" sans-serif;
-}
-
-footer {
-    position: fixed;
-    bottom: 10px;
-    background-color: transparent;
+.hours {
+    font-size: 50px;
     width: 100%;
 }
 
-.salmon {
-    border: solid;
-    border-radius: 50%;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-
-
-nav ul li {
-    display: inline;
-    
+footer {
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    bottom: 0;
 }
 
 .lima {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+}
+/* Sales Styles */
+
+table {
+    width: 100%;
+    padding: 
 }
 
+table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color:
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: grey;
+}
+
+#heading {
+    font-family: "Sofia", sans-serif;
+    color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+
+.salesbtn {
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
