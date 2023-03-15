@@ -31,6 +31,10 @@ nav ul li{
 
 }
 
+h4 {
+    font-weight: bolder;
+}
+
 .hours {
     font-size: 50px;
     width: 100%;
@@ -48,11 +52,21 @@ footer {
 .lima {
     padding-bottom: 40px;
 }
+
+.contacts {
+    padding-bottom: 70px;
+}
+
+p {
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Sales Styles */
 
 table {
     width: 100%;
-    padding: 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table th {

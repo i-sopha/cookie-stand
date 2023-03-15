@@ -21,3 +21,5 @@ Pat needs you to take a leading role in doing the design work and construction o
 So, in addition to building an application that calculates daily sales projections for each location (on a page called sales.html), you also need to create a public-facing page (on the homepage index.html) that is colorful, eye-catching, readable, useful, and informative.
 
 You’ve got a lot to do. Plan your work, and work your plan.
+
+![Lighthouse](./assets/img/lighthouse.png)
