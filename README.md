@@ -22,4 +22,6 @@ So, in addition to building an application that calculates daily sales projectio
 
 You’ve got a lot to do. Plan your work, and work your plan.
 
-![Lighthouse](./assets/img/lighthouse.png)
+![Lighthouse](./assets/img/lighthouse-lab8.png)
+
+![LightHouse](./assets/img/lighthouse-lab9.png)

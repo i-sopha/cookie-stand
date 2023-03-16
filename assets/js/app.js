@@ -11,7 +11,7 @@ console.log(tableEl);
 
 let allStores = [];
 
-// Constructor function
+// Constructor function: shared values between each cities
 function City(location, minCust, maxCust, avgSale) {
   this.location = location;
   this.minCust = minCust;
@@ -50,7 +50,7 @@ hoursOfOperation();
 
 
 
-// Functions for the cities
+// Prototype Functions for the cities
 City.prototype.getCustomersPerHour = function () {
   for (let i = 0; i < hours.length; i++) {
     this.customersPerHour.push(random(this.minCust, this.maxCust));
@@ -87,20 +87,26 @@ City.prototype.renderTrElements = function () {
 
 };
 
-
+// Calling each added city from the constructor
 let seattle = new City('Seattle', 23, 65, 6.3);
-seattle.renderTrElements();
+// seattle.renderTrElements();
 let tokyo = new City('Tokyo', 3, 24, 6.3);
-tokyo.renderTrElements();
+// tokyo.renderTrElements();
 let dubai = new City('Dubai', 11, 38, 3.7);
-dubai.renderTrElements();
+// dubai.renderTrElements();
 let paris = new City('Paris', 20, 38, 2.3);
-paris.renderTrElements();
+// paris.renderTrElements();
 let lima = new City('Lima', 2, 16, 4.6);
-lima.renderTrElements();
+// lima.renderTrElements();
 
+function renderAllStores () {
+  for (let i = 0; i < allStores.length; i++) {
+    allStores[i].renderTrElements();
+  }
+}
+renderAllStores();
 
-// Footer rows
+// Footer row
 
 let footerCells = function () {
 
@@ -126,13 +132,61 @@ let footerCells = function () {
 
   }
 
+    // Grand total
   let grandTotalTd = document.createElement('td');
   grandTotalTd.textContent = grandTotal;
   footerRow.appendChild(grandTotalTd);
 };
 
+// Calling Footer Row
 console.log(allStores);
 footerCells();
+
+
+
+
+
+
+let addNewLocation = document.getElementById('new-location-form');
+
+
+
+
+// Getting data onto table
+let newLocData = function (event) {
+  event.preventDefault();
+  let newCity = new City(event.target.locName.value, parseInt(event.target.minInput.value), parseInt(event.target.maxInput.value), parseInt(event.target.salesInput.value));
+  console.log(allStores);
+  newCity.getCustomersPerHour();
+  newCity.getCookiesPerHour();
+  tableEl.innerHTML = '';
+
+
+  hoursOfOperation();
+  renderAllStores();
+  footerCells();
+
+  // let newLocationName = document.createElement('tr');
+  // tableEl.appendChild(newLocationName);
+
+  // for (let i = 0; i < hours.length; i++) {
+  //   this.cookiesPerHour;
+  //   let newLocHourly = document.createElement('tr');
+  //   newLocHourly.textContent = this.cookiesPerHour[i];
+  //   newLocationName.appendChild(newLocHourly);
+  // }
+
+};
+
+
+
+addNewLocation.addEventListener('submit', newLocData);
+
+
+
+
+
+
 
 // seattle.getCustomersPerHour();
 // tokyo.getCustomersPerHour();
