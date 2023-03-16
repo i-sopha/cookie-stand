@@ -149,10 +149,6 @@ footerCells();
 
 let addNewLocation = document.getElementById('new-location-form');
 
-
-
-
-// Getting data onto table
 let newLocData = function (event) {
   event.preventDefault();
   let newCity = new City(event.target.locName.value, parseInt(event.target.minInput.value), parseInt(event.target.maxInput.value), parseInt(event.target.salesInput.value));
@@ -166,19 +162,7 @@ let newLocData = function (event) {
   renderAllStores();
   footerCells();
 
-  // let newLocationName = document.createElement('tr');
-  // tableEl.appendChild(newLocationName);
-
-  // for (let i = 0; i < hours.length; i++) {
-  //   this.cookiesPerHour;
-  //   let newLocHourly = document.createElement('tr');
-  //   newLocHourly.textContent = this.cookiesPerHour[i];
-  //   newLocationName.appendChild(newLocHourly);
-  // }
-
 };
-
-
 
 addNewLocation.addEventListener('submit', newLocData);
 
